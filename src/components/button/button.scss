@@ -1,0 +1,12 @@
+@import "../../sass/abstracts/variables";
+
+
+.button-primary {
+    background-color: $color-tertiary;
+    color: $color-white;
+    height: 40px;
+    width: 100%;
+    border-radius: $big-border;
+    border: none;
+    cursor: pointer;
+}
