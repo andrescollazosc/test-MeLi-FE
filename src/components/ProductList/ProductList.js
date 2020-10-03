@@ -16,10 +16,10 @@ export const ProductList = ({ seacrh }) => {
     <div>
       <div>
         {loading ? (
-          <div>
             <Spinner className="" />
-          </div>
-        ) : (data.result !== undefined) ? (
+          // <div>
+          // </div>
+        ) : data.result !== undefined ? (
           <div>
             <CategoriesList categories={data.categories} />
             {data.result.map((data, i) => (

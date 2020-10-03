@@ -6,7 +6,6 @@ export const Initial = () => {
 
   return (
     <div>
-      <AlertMessage />
     </div>
   );
 };
