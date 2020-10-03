@@ -7,7 +7,7 @@ import { Spinner } from "../spinner/Spinner";
 const API = { ...API_CONSTANTS.API };
 
 export const ProductDetailSummary = ({ id }) => {
-  const URL = `${API.URL}product/${id}`;
+  const URL = `${API.URL}${ API.END_POINTS.PRODUCT_BY_ID }${id}`;
 
   const { loading, data } = useFetch(URL);
 

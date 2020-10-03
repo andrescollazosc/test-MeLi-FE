@@ -1,0 +1,12 @@
+@import "../../sass/abstracts/variables";
+
+.category-container {
+    padding-bottom: $basic-padding;
+}
+
+.categories-list {
+    color: $color-second-grey;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+}
