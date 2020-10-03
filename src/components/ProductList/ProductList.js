@@ -17,8 +17,6 @@ export const ProductList = ({ seacrh }) => {
       <div>
         {loading ? (
             <Spinner className="" />
-          // <div>
-          // </div>
         ) : data.result !== undefined ? (
           <div>
             <CategoriesList categories={data.categories} />
