@@ -20,7 +20,7 @@
   }
 
   &__img {
-    width: 240px;
+    width: 200px;
     height: auto;
   }
 
@@ -28,7 +28,6 @@
     font-family: inherit;
     font-weight: 600;
     font-size: 28px;
-    // padding: $double-padding 0 $double-padding 0;
     padding: 0 0 $double-padding 0;
   }
 
@@ -90,7 +89,7 @@
     padding: $double-padding 0 $basic-padding 0;
 
     &__product-desc {
-      font-size: 18px;
+      font-size: 14px;
     }
 
     &__product-values {
