@@ -6,6 +6,8 @@ import { CategoriesList } from "../CategoriesList/CategoriesList";
 import { ProductCard } from "../ProductCard/ProductCard";
 import { Spinner } from "../spinner/Spinner";
 
+import "./prodcut.scss";
+
 const API = { ...API_CONSTANTS.API };
 
 export const ProductList = ({ seacrh }) => {
@@ -14,20 +16,18 @@ export const ProductList = ({ seacrh }) => {
 
   return (
     <div>
-      <div>
-        {loading ? (
-            <Spinner className="" />
-        ) : data.result !== undefined ? (
-          <div>
-            <CategoriesList categories={data.categories} />
-            {data.result.map((data, i) => (
-              <ProductCard key={i} data={data.items} />
-            ))}
-          </div>
-        ) : (
-          <AlertMessage />
-        )}
-      </div>
+      {loading ? (
+        <Spinner />
+      ) : data.result !== undefined ? (
+        <div>
+          <CategoriesList categories={data.categories} />
+          {data.result.map((data, i) => (
+            <ProductCard key={i} data={data.items} />
+          ))}
+        </div>
+      ) : (
+        <AlertMessage />
+      )}
     </div>
   );
 };
